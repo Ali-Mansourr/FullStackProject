@@ -9,6 +9,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { GenreRankingComponent } from './components/genre-ranking/genre-ranking.component';
 import { AppRankingComponent } from './components/app-ranking/app-ranking.component';
 import { AppDetailsComponent } from './components/app-details/app-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,14 @@ import { AppDetailsComponent } from './components/app-details/app-details.compon
     GenreRankingComponent,
     AppRankingComponent,
     AppDetailsComponent
-
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

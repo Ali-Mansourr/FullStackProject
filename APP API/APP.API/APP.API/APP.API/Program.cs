@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
+using APP.API.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<appdbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection ") ?? throw new InvalidOperationException("Connection string 'appdbContext' not found.")));
 
 // Add services to the container.
 
@@ -23,5 +30,4 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.UseMiddleware<ApiKeyMiddleware>();
 app.Run();

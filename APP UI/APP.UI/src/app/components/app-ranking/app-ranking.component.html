@@ -1,1 +1,52 @@
-<p>app-ranking works!</p>
+<div class="outer">
+    
+        
+    <nav class="navbar">
+        <div class="container-fluid me-4 ms-4 mb-3">
+            <!-- Buttons -->
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1"><span class="fa fa-android"></span></label>
+                
+            
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2"><span class="fa fa-apple"></span></label>
+            </div>
+            <!-- Drop Down -->
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Countries
+                </a>
+              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <!-- Date -->
+            <span class="DateTime mt-3">Date and Time</span>
+
+
+        </div>
+    </nav>
+    
+    <!-- Cards Container -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Looping to get Items -->
+            <div class="col" *ngFor="let app of appRankingData$ | async">
+                <div class="card" style="width: 15rem;">
+                <a routerLink="/app-details/{{app.appName}}">    
+                    <img [src]="app.imgurl" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-title fw-bold">{{app.appName}}</p>
+                    <p class="card-body">{{app.publisherName}}</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

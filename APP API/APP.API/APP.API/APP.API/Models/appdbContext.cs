@@ -18,20 +18,23 @@ namespace APP.API.Models
         {
         }
 
-        public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Defaultuser> Defaultuser { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.UseCollation("utf8mb4_0900_ai_ci")
                 .HasCharSet("utf8mb4");
 
-            modelBuilder.Entity<User>(entity =>
+            modelBuilder.Entity<Defaultuser>(entity =>
             {
-                entity.ToTable("user");
+                entity.HasKey(e => e.Iddefaultuser)
+                    .HasName("PRIMARY");
 
-                entity.Property(e => e.UserId)
+                entity.ToTable("defaultuser");
+
+                entity.Property(e => e.Iddefaultuser)
                     .ValueGeneratedNever()
-                    .HasColumnName("userID");
+                    .HasColumnName("iddefaultuser");
 
                 entity.Property(e => e.UserName)
                     .IsRequired()

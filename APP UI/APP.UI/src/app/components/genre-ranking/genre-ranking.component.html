@@ -26,7 +26,7 @@
                 </div>
 
                 <!-- Date -->
-                <span>Date and Time</span>
+                <span class="DateTime mt-3">Date and Time</span>
 
 
             </div>
@@ -35,43 +35,18 @@
         <!-- Cards Container -->
         <div class="container mt-5">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <!-- Looping to get Items -->
+                <div class="col" *ngFor="let genre of genreData$ | async">
+                <a routerLink="/app-ranking/{{genre.name}}">
+                    <div class="card" style="width: 15rem;">
+                        <img [src]="genre.imgurl" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-title text-center fw-bold">{{genre.name}}</p>
+                        </div>
+                        
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
+                </a>
                 </div>
             </div>
         </div>
-    
 </div>

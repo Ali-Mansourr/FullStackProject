@@ -1,0 +1,71 @@
+{
+  "Casual": [
+    {
+      "appName": "Candy Crush Saga",
+      "publisherName": "King",
+      "rating": "5",
+      "genre": "Casual",
+      "imgurl": "https://play-lh.googleusercontent.com/gU9NKwpgLDYA6LIYK4dnkAkVyqNHUfTIqklEiNuO4oZ2OCpWQhQdqhnDh8Yb9B8SWIM=w240-h480-rw"
+    },
+    {
+      "appName": "Pou",
+      "publisherName": "Zakeh",
+      "rating": "3",
+      "genre": "Casual",
+      "imgurl": "https://play-lh.googleusercontent.com/xToRFw-mqA18HtizgutV0K1IouakfR8iJ3PW75u-1n1oxbP7hVfBMlgHWIwuUYKKS_s=w240-h480-rw"
+    },
+    {
+      "appName": "Angry Birds 2",
+      "publisherName": "Rovio Entertainment Corporation",
+      "rating": "4",
+      "genre": "Casual",
+      "imgurl": "https://play-lh.googleusercontent.com/nDXdk5wKKYXgqyGYAOn-RlL71bFoIEI2PlVKfi1-7A3n5p89FqRGpVXjFWBbDKoP-A=w240-h480-rw"
+    }
+  ],
+  "Action": [
+    {
+      "appName": "PUBG MOBILE",
+      "publisherName": "Level Infinite",
+      "rating": "5",
+      "genre": "Action",
+      "imgurl": "https://play-lh.googleusercontent.com/JRd05pyBH41qjgsJuWduRJpDeZG0Hnb0yjf2nWqO7VaGKL10-G5UIygxED-WNOc3pg=w240-h480-rw"
+    },
+    {
+      "appName": "Clash of Clans",
+      "publisherName": "Supercell",
+      "rating": "5",
+      "genre": "Action",
+      "imgurl": "https://play-lh.googleusercontent.com/LByrur1mTmPeNr0ljI-uAUcct1rzmTve5Esau1SwoAzjBXQUby6uHIfHbF9TAT51mgHm=s48-rw"
+    },
+    {
+      "appName": "BombSquad",
+      "publisherName": "Eric Froemling",
+      "rating": "4",
+      "genre": "Action",
+      "imgurl": "https://play-lh.googleusercontent.com/CachTgIoVy7oEtLlgeo8bPcJfaUHRopRYUOH-DYyeiRsQQaqg8gjpp1qGgOs3wiC2IQ=s48-rw"
+    }
+  ],
+  "Adventure": [
+    {
+      "appName": "Roblox",
+      "publisherName": "Roblox Corporation",
+      "rating": "5",
+      "genre": "Adventure",
+      "imgurl": "https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht=s48-rw"
+    },
+    {
+      "appName": "X Survive: Open World Sandbox",
+      "publisherName": "Free Square Games",
+      "rating": "3",
+      "genre": "Adventure",
+      "imgurl": "https://play-lh.googleusercontent.com/c8i_CxtIWXNKoeevMl_QbnKEFXYX3JvuKQ8fgAFX4Hd9AzJmB64GINaxX35a7qYOOOY=s48-rw"
+    },
+    {
+      "appName": "Pok�mon GO",
+      "publisherName": "Niantic, Inc.",
+      "rating": "4",
+      "genre": "Adventure",
+      "imgurl": "https://play-lh.googleusercontent.com/0vpq7Mu6ZEloYsC6kJFJRRHidRQzZf9loRcOcBh03GT2DNQiX_Z-uS9tyYuaHZIDKCI=s48-rw"
+    }
+  ]
+}

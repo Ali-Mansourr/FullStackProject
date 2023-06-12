@@ -11,7 +11,9 @@ const routes: Routes = [
   {path:'signup', component: SignupComponent},
   {path:'genre-ranking', component: GenreRankingComponent},
   {path:'app-ranking', component: AppRankingComponent},
-  {path:'app-details', component: AppDetailsComponent}
+  {path:'app-details', component: AppDetailsComponent},
+  {path: 'app-ranking/:genre', component: AppRankingComponent},
+  {path: 'app-details/:app', component: AppDetailsComponent}
 ];
 
 @NgModule({

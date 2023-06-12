@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Casual",
+    "genre_id": "CASUAL",
+    "imgurl":  "https://play-lh.googleusercontent.com/gU9NKwpgLDYA6LIYK4dnkAkVyqNHUfTIqklEiNuO4oZ2OCpWQhQdqhnDh8Yb9B8SWIM=w240-h480-rw"
+  },
+  {
+    "name": "Action",
+    "genre_id": "ACTION",
+    "imgurl": "https://play-lh.googleusercontent.com/JRd05pyBH41qjgsJuWduRJpDeZG0Hnb0yjf2nWqO7VaGKL10-G5UIygxED-WNOc3pg=w240-h480-rw"
+  },
+  {
+    "name": "Adventure",
+    "genre_id": "ADVENTURE",
+    "imgurl": "https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht=w240-h480-rw"
+  }
+]

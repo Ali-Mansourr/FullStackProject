@@ -1,1 +1,65 @@
-<p>app-details works!</p>
+<div class="outer">
+    
+        
+    <nav class="navbar">
+        <div class="container-fluid me-4 ms-4 mb-3">
+            <!-- Buttons -->
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1"><span class="fa fa-android"></span></label>
+                
+            
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2"><span class="fa fa-apple"></span></label>
+            </div>
+            <!-- Drop Down -->
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Countries
+                </a>
+              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <!-- Date -->
+            <span class="DateTime mt-3">Date and Time</span>
+
+
+        </div>
+    </nav>
+    
+    <div class="container" *ngFor="let app of appDetailsData$ | async">
+        <div class="col-md-12">
+        <section class="panel">
+              <div class="panel-body">
+                  <div class="col-md-6">
+                      <div class="img">
+                          <img [src]="app.imgurl">
+                      </div>
+                      <div class="pro-img-list">
+                          <ul *ngFor="let i of app.gallery">
+                              <li><img src="{{app.gallery[i]}}" alt=""></li>
+                          </ul>
+                      </div>
+                  
+                  <div class="col-md-6">
+                      <h4 class="pro-d-title">
+                        {{app.appName}}
+                      </h4>
+                      <p>{{app.description}}</p>
+                      <div class="product_meta">
+                          <span class="posted_in"> <strong>Genres:</strong> {{app.genre}}</span>
+                          <span class="tagged_as"><strong>Publisher Name:</strong> {{app.publisherName}}</span>
+                      </div>
+                      <div class="m-bot15"> <strong>Rating : </strong> <span >{{app.rating}}</span></div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          </div>
+        </div>
+</div>
